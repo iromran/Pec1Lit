@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "clean": "sudo rimraf dist .cache .cache-loader"
+    "clean": "rimraf dist .cache .cache-loader"
   },
   "babel": {
     "presets": [
