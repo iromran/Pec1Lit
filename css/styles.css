@@ -96,6 +96,10 @@ div{
     font-weight: bold;
     color:black;
 }
+.sp_bold_footer{
+    font-weight: bold;
+    color:white;
+}
 header{
     text-align: center;
     font-size: 1.5em ;
@@ -153,10 +157,19 @@ footer a:hover{
     padding-left:0em;
     font-size: 1.3em;
 }
+.p_footer{
+    padding-top: 1em;
+    font-size: 1.5em;
+}
 .li_footer{
     list-style: none;
     margin: 0.2em;
     padding:0em;
+}
+.img_footer{
+    width: 5em;
+    height: 5em;
+    clip-path: polygon(0% 5%,100% 5%,100% 25%,0% 25%,0% 40%,100% 40%,100% 60%,0% 60%,0% 75%,100% 75%,100% 95%,0% 95%);
 }
 .sp_color_1{
     color: #413022;
@@ -165,11 +178,29 @@ footer a:hover{
     color: #413022;
 }
 .a_texto{
-    color:#a80a0a;
-    text-decoration: none;
+    color:transparent;
+    background-image: linear-gradient(to right, #800, #880, #088, #080, #008);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: change 20s linear infinite;
+    background-size: 1000%;
+    font-weight: bold;
 }
 .a_texto:hover{
-    opacity: 0.5;
+    opacity: 0.75;
+}
+@keyframes change
+{
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+
 }
 
 .p_libros{
@@ -181,6 +212,20 @@ footer a:hover{
 }
 .img_lib{
     max-width: 100%;    
+}
+
+.img_detalle1{
+    width: 30%;
+    height: 30%;   
+}
+.img_detalle2{
+    width: 60%;
+    height: 60%;   
+}
+.img_header{
+    width: 1.3em;
+    height: 0.9em;
+    padding-right:0.2em;    
 }
 .p_titulo{
     padding-left:1em;
@@ -258,7 +303,7 @@ footer a:hover{
         text-align:center;
     }
     .ul_footer_i{
-        padding-top: 4em;
+
         padding-bottom: 4em;
         text-align:center;
         font-size: 1.1em;

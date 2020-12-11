@@ -15,7 +15,7 @@
         <form action="" id="form">
             <div class="header_gr">
                 <p class="p_header"><button type="submit" form="form" value="Submit">Cambiar Color</button></p>
-                <p class="p_header_lit"><a href="./index.html" class="a_header"><span
+                <p class="p_header_lit"><a href="./index.html" class="a_header"><img class="img_header" src="./img/logotipo.png" alt=""><span
                             class="sp_bold">LitForAll</span></a></p>
                 <nav>
                     <ul>
@@ -31,7 +31,10 @@
         <div class="detalle_libro">
             <div>
                 <h2 class="h_detalles">Rayuela</h2>
-                <p><img class="img_lib" src="./img/libro1.jpg" alt=""></p>
+                <p><img srcset="./img/libro1@mobile.jpg 480w,
+                                ./img/libro1.jpg 720w"
+                        src="./img/libro1.jpg"
+                        sizes="(max-width: 720px) 480px, 720px"></p>
                 <dl>
                     <dt>Datos del libro</dt>
                     <dd>
@@ -50,6 +53,11 @@
                     primera vez el 28 de junio de 1963, constituye una de las obras centrales del boom latinoamericano y
                     de la literatura en español.
                 </p>
+                <p><picture> 
+                  <source media="(max-width: 720px)"
+                          srcset="./img/cortazar2@mobile.jpg">
+                  <img class="img_detalle2" src="./img/cortazar2.jpg">
+                </picture></p>
                 <p class="p_detalles_libro">
                     Narra la historia de Horacio Oliveira, su protagonista, y su relación con <q>la Maga</q>. La
                     historia
@@ -65,17 +73,25 @@
                     la obra <q>de alguna manera es la experiencia de toda una vida y la tentativa de llevarla a la
                         escritura</q>
                 </p>
+                <p><img srcset="./img/cortazar@mobile.jpg 480w,
+                                ./img/cortazar.jpg"
+                        src="./img/cortazar.jpg"
+                        sizes="(max-width: 720px) 480px, 500px"></p>
                 <p class="p_detalles_libro">Fuente: Wikipedia </p>
             </div>
         </div>
         <footer>
             <div>
+                <p class="p_footer"><a href="./index.html"><span class="sp_bold_footer">LitForAll</span></a><p>
+                <p><img class="img_footer" src="./img/portada.jpg" alt=""></p>   
+            </div>
+            <div>        
                 <ul class="ul_footer_i">
                     <li class="li_footer"><span class="sp_color_1">-</span><a href=""> Sobre Nosotros </a><span
-                            class="sp_color_2">-</span></li>
+                  class="sp_color_2">-</span></li>
                     <li class="li_footer"><a href="">Aviso legal</a></li>
                     <li class="li_footer"><span class="sp_color_2">-</span><a href=""> Política de privacidad </a><span
-                            class="sp_color_1">-</span></li>
+                  class="sp_color_1">-</span></li>
                 </ul>
             </div>
             <ul class="ul_footer_l">

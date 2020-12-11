@@ -15,7 +15,7 @@
         <form action="" id="form">
             <div class="header_gr">
                 <p class="p_header"><button type="submit" form="form" value="Submit">Cambiar Color</button></p>
-                <p class="p_header_lit"><a href="./index.html" class="a_header"><span
+                <p class="p_header_lit"><a href="./index.html" class="a_header"><img class="img_header" src="./img/logotipo.png" alt=""><span
                             class="sp_bold">LitForAll</span></a></p>
                 <nav>
                     <ul>
@@ -31,7 +31,10 @@
         <h1>Libros de Ciencia Ficción</h1>
         <div class="libros">
             <div>
-                <p><img class="img_lib" src="./img/libro4.jpg" alt=""></p>
+                <p><img srcset="./img/libro4@mobile.jpg 480w,
+                                ./img/libro4.jpg 720w"
+                        src="./img/libro4.jpg"
+                        sizes="(max-width: 720px) 480px, 720px"></p>
                 <p class="p_titulo">El problema de los tres cuerpos</p>
                 <p class="p_libros">El problema de los tres cuerpos es una novela de ciencia ficción del escritor chino Liu Cixin. Es el primer libro de
                     la trilogía titulada El recuerdo del pasado de la Tierra,
@@ -41,34 +44,44 @@
                 </p>
             </div>
             <div>
-                <p><img class="img_lib" src="./img/libro5.jpg" alt=""></p>
+                <p><img srcset="./img/libro5@mobile.jpg 480w,
+                                ./img/libro5.jpg 720w"
+                        src="./img/libro5.jpg"
+                        sizes="(max-width: 720px) 480px, 720px"></p>
                 <p class="p_titulo">La máquina del tiempo</p>
                 <p class="p_libros">La máquina del tiempo (The Time Machine) es una novela de ciencia ficción del escritor británico Herbert George Wells, publicada por primera vez en Londres en el año 1895 por William Heinemann. Consta de dieciséis capítulos y un epílogo.Al contrario que Julio Verne, padre del detalle y la explicación minuciosa, Wells describe (a propósito) la máquina de modo superficial y a la ligera, con algunas pinceladas de color, que dejan al lector con curiosidad por saber más del invento y su mecanismo.</p>
                 <p class="p_libros"><a class="a_texto" href="">Más información... +</a>
                 </p>
             </div>
             <div>
-                <p><img class="img_lib" src="./img/libro6.jpg" alt=""></p>
+                <p><img srcset="./img/libro6@mobile.jpg 480w,
+                                ./img/libro6.jpg 720w"
+                        src="./img/libro6.jpg"
+                        sizes="(max-width: 720px) 480px, 720px"></p>
                 <p class="p_titulo">Dune</p>
                 <p class="p_libros">Dune es una novela de ciencia ficción escrita por Frank Herbert en 1965. Su éxito fue rotundo; en 1966 ganó el Premio Hugo y en 1965 la primera edición del Premio Nébula a la mejor novela de ciencia ficción. Publicado en español por la editorial Acervo en 1975, Dune abre una de las sagas más importantes de la literatura fantástica y de ciencia ficción. En 2007 se registraron unas ventas de más 12 millones de ejemplares, convirtiéndola en la novela de ciencia ficción más vendida a la fecha.1</p>
                 <p class="p_libros"><a class="a_texto" href="">Más información... +</a>
                 </p>
             </div>
         </div>
-        <footer>
-            <div>
-                <ul class="ul_footer_i">
-                    <li class="li_footer"><span class="sp_color_1">-</span><a href=""> Sobre Nosotros </a><span
-                            class="sp_color_2">-</span></li>
-                    <li class="li_footer"><a href="">Aviso legal</a></li>
-                    <li class="li_footer"><span class="sp_color_2">-</span><a href=""> Política de privacidad </a><span
-                            class="sp_color_1">-</span></li>
-                </ul>
-            </div>
-            <ul class="ul_footer_l">
-                <li class="li_footer_l">© 2020 Ismael Romero Rando</li>
-            </ul>
-        </footer>
+    <footer>
+      <div>
+        <p class="p_footer"><a href="./index.html"><span class="sp_bold_footer">LitForAll</span></a><p>
+        <p><img class="img_footer" src="./img/portada.jpg" alt=""></p>   
+      </div>
+      <div>        
+        <ul class="ul_footer_i">
+          <li class="li_footer"><span class="sp_color_1">-</span><a href=""> Sobre Nosotros </a><span
+              class="sp_color_2">-</span></li>
+          <li class="li_footer"><a href="">Aviso legal</a></li>
+          <li class="li_footer"><span class="sp_color_2">-</span><a href=""> Política de privacidad </a><span
+              class="sp_color_1">-</span></li>
+        </ul>
+      </div>
+      <ul class="ul_footer_l">
+        <li class="li_footer_l">© 2020 Ismael Romero Rando</li>
+      </ul>
+    </footer>
     </main>
 </body>
 
