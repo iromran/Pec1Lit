@@ -255,6 +255,7 @@ footer a:hover{
     padding-right: 0em;
 }
 
+
 /* PC */
 @media(min-width: 720px){
     html{
@@ -312,6 +313,10 @@ footer a:hover{
     .ul_footer_l{
 
         padding-left:1.3em;
+    }
+    .img_index{
+    width: 55%;
+    height: 55%;   
     }
     .li_footer_l{
         text-align:left;
