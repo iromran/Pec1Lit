@@ -255,4 +255,107 @@ footer a:hover{
     padding-right: 0em;
 }
 
+@media(min-width: 720px){
+    html{
+        font-size: 65%;
+    }
+    img{
+        max-width: 90%;    
+    }
+    header nav{
+        position: relative;
+        bottom: -1em;
+    }
+    .a_header{
+        padding-left: 2.15em;
+        font-weight: bold;
+        padding-bottom:0.10em;
+        font-size:1.6em;
+    }
+    .header_gr{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;       
+    }
+    .header_gr p:nth-of-type(1){
+        order:3;
+    }
+    .header_gr p:nth-of-type(2){
+        order:1;
+    }
+    .header_gr nav:nth-of-type(1){
+        order:2;
+    }
+    .p_header{
+        text-align:right;
+    }
+    .p_header_lit{
+        text-align:left;        
+    }
+    .li_footer{
+        display:inline;
+        margin:0em;
+        font-size:1.2em;
+        padding:0em;
+        list-style: disc;
+    }
+    .div_footer{
+        text-align:center;
+    }
+    .ul_footer_i{
 
+        padding-bottom: 4em;
+        text-align:center;
+        font-size: 1.1em;
+        padding-left:0.5em;
+    }
+    .ul_footer_l{
+
+        padding-left:1.3em;
+    }
+    .img_index{
+    width: 55%;
+    height: 55%;   
+    }
+    .li_footer_l{
+        text-align:left;
+        padding-left: 1em;
+    }
+    .sp_color_2{
+        color:#FFFFFF;
+        margin:0.1em;
+    }
+    nav li{  
+        padding:0.3em;
+        font-family: montserrat;
+        list-style: none;
+        text-align: center;
+        display: inline;
+    }
+    .p_libros{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    .libros{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 3em;
+    }
+    .detalle_libro{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .h_detalles{
+        font-size: 1.6em
+    }
+    dt{
+        font-size: 1.2em
+    }
+    dd{
+        font-size: 1.2em
+    }
+
+}
